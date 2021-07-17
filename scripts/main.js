@@ -23,11 +23,3 @@ $(document).ready(function(){
     });
   });
 })
-
-function goToHighCreativity(){
-    window.location.href = "highCreativity.html";
-}
-
-function goToHighDentity(){
-    window.location.href = "highDentity.html";
-}
