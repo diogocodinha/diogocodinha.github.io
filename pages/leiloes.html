@@ -10,14 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="../scripts/main.js"></script>
-    <script src="../scripts/leiloes.js"></script>
-
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/leiloes.css">
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-
 </head>
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -37,48 +30,170 @@
 	    </div>
 	    <div class="collapse navbar-collapse" id="myNavbar">
 	      <ul class="nav navbar-nav navbar-right">
-	        <li><a href="#about">SOBRE NÓS</a></li>
-	        <li><a href="#leiloes">LEILOES</a></li>
-	        <li><a href="#contact">CONTACTO</a></li>
+              <li><a href="../index.html">VOLTAR</a></li>
+              <li><a class="sellButton" data-toggle="modal" data-target="#myModal">VENDER</a></li>
 	      </ul>
 	    </div>
 	  </div>
 	</nav>
 
-    <div id="leiloes" class="container-fluid">
-        <h2 class="text-center">LEILOES</h2>
-        <div class="container">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                </div>
-                <fieldset class="form-group">
-                    <a href="javascript:void(0)" onclick="$('#pro-image').click()">Upload Image</a>
-                    <input type="file" id="pro-image" name="pro-image" style="display: none;" class="form-control" multiple>
-                    <input type="text" style="display: none;">
-                </fieldset>
-            </form>
 
-            <div class="preview-images-zone">
-                <div class="preview-image preview-show-1">
-                    <div class="image-cancel" data-no="1">x</div>
-                    <div class="image-zone"><img id="pro-img-1" src="https://img.purch.com/w/660/aHR0cDovL3d3dy5saXZlc2NpZW5jZS5jb20vaW1hZ2VzL2kvMDAwLzA5Ny85NTkvb3JpZ2luYWwvc2h1dHRlcnN0b2NrXzYzOTcxNjY1LmpwZw=="></div>
-                    <div class="image-text">hello</div>
+    <div id="leiloes" class="container-fluid">
+        <h2 class="text-center">LEILÕES</h2>
+        <div class="container">
+            <ul id="listaItens"class="list-group">
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/guitarra1.jpeg" alt=""/>
+              <h3 class="list-group-item-heading">
+                Guitarra
+                <span class="label label-danger pull-right">NEW !</span>
+              </h3>
+              <p class="list-group-item-text lead">
+                Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar"  aria-label="">
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn btn-primary">129.99€</a>
+              </div>
+            </li>
+
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/sofa.jpg" alt=""/>
+              <h3 class="list-group-item-heading">
+                Sofá
+              </h3>
+              <p class="list-group-item-text lead">
+                Donec sed odio dui. Donec id elit non mi porta gravida at eget metus. Donec sed odio dui. Donec id elit non mi porta gravida at eget metus.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar" aria-label="">
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn btn-primary">82.50€</a>
+              </div>
+            </li>
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/fatima.jfif" alt=""/>
+              <h3 class="list-group-item-heading">
+                Estátua Nossa Senhora de Fátima
+                <span class="label label-default pull-right">SOLD OUT</span>
+              </h3>
+              <p class="list-group-item-text lead">
+                Cras justo odio, dapibus ac facilisis in, egestas eget quam. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar" aria-label="">
+                <a href="#" class="btn disabled btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn disabled btn-primary">Grátis!</a>
+              </div>
+            </li>
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/monitor.jpg" alt=""/>
+              <h3 class="list-group-item-heading">
+                Monitor
+              </h3>
+              <p class="list-group-item-text lead">
+                Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar" aria-label="">
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn btn-primary">$116.00</a>
+              </div>
+            </li>
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/candeeiro.jpg" alt=""/>
+              <h3 class="list-group-item-heading">
+                Candeeiro
+              </h3>
+              <p class="list-group-item-text lead">
+                Etiam porta sem malesuada magna mollis euismod. Etiam porta sem malesuada magna mollis euismod.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar" aria-label="">
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn btn-primary">$12.99</a>
+              </div>
+            </li>
+            <li class="list-group-item clearfix">
+              <img class="img-responsive img-rounded" src="../images/gato.jpg" alt=""/>
+              <h3 class="list-group-item-heading">
+                Gatinho Persa
+              </h3>
+              <p class="list-group-item-text lead">
+                Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum. Cras mattis consectetur purus sit amet fermentum. Maecenas faucibus mollis interdum.
+                <br />
+                <a href="#"><small>Details&#8230;</small></a>
+              </p>
+              <div class="btn-toolbar pull-right x" role="toolbar" aria-label="">
+                <a href="#" class="btn btn-default" data-toggle="modal" data-target="#bidModal">Licitar</a>
+                <a href="#" class="btn btn-success">Grátis!</a>
+              </div>
+            </li>
+            </ul>
+            </div>
+    </div>
+
+
+    <div id="myModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Vender</h4>
                 </div>
-                <div class="preview-image preview-show-2">
-                    <div class="image-cancel" data-no="2">x</div>
-                    <div class="image-zone"><img id="pro-img-2" src="https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/flip.jpg"></div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" placeholder="Introduza o Nome">
+                    </div>
+                    <div class="mb-3">
+                        <label for="description" class="form-label">Descrição</label>
+                        <input type="text" class="form-control" id="description" placeholder="Introduza uma descrição">
+                    </div>
+                    <div class="mb-3">
+                        <label for="price" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="price" placeholder="Introduza o preço inicial">
+                    </div>
+                    <div class="mb-3">
+                        <label for="image" class="form-label">Select image:</label>
+                        <input type="file" class="form-control" id="image" name="img" accept="images/*">
+                    </div>
                 </div>
-                <div class="preview-image preview-show-3">
-                    <div class="image-cancel" data-no="3">x</div>
-                    <div class="image-zone"><img id="pro-img-3" src="http://i.stack.imgur.com/WCveg.jpg"></div>
+                <div class="modal-footer">
+                    <button type="button" id="sellButton" class="btn btn-default" data-dismiss="modal">Vender</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                 </div>
             </div>
         </div>
     </div>
-
+        <div id="bidModal" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Licitar</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="modalPrice" class="form-label">Preço</label>
+                        <input type="number" class="form-control" id="modalPrice" placeholder="Introduza o Preço">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="bidButton" class="btn btn-default" data-dismiss="modal">Licitar</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="contact" class="container-fluid">
       <h2 class="text-center">CONTACTOS</h2>
@@ -117,7 +232,5 @@
     	</div>
     </footer>
 
-<script data-cfasync="false" src="form-submission-handler.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 </body>
 </html>

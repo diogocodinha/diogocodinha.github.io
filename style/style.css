@@ -83,9 +83,10 @@ p {
 	text-align: center;
 }
 
+
 .btn{
 	color: #FFF;
-	background-color: #000;
+	background-color: #4a2342;
 	border-radius: 25px;
 	margin-top: 2%;
 	justify-content: center;
@@ -93,7 +94,7 @@ p {
 }
 
 .btn:hover {
-	color: #000;
+	color: #4a2342;
 	background-color: #FFF;
 }
 
