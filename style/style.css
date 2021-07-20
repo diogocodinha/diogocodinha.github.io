@@ -28,7 +28,14 @@ p {
 	color: #FFF;
 }
 
+#home {
+	background-image: url("../images/marteloC.jpg");
+}
 
+.video {
+	margin-top: -5%;
+	width: 100%;
+}
 
 .gif-wrapper {
 	width: 100%;
