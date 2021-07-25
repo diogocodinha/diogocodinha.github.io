@@ -29,7 +29,8 @@ p {
 }
 
 #home {
-	background-image: url("../images/marteloC.jpg");
+	background-image: url("../images/background1.jpg");
+	background-position-y: 20%;
 }
 
 .video {
