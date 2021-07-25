@@ -96,6 +96,7 @@ function createItem(imagem, nome, descricao, preco, date, newItem) {
 
   document.getElementById("listaItens").innerHTML = li + document.getElementById("listaItens").innerHTML;
 
+
   $("#"+buttonId).on("click", function() {
       console.log(priceId, buttonId);
       currentPriceId = priceId;
